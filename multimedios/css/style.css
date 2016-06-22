@@ -1,0 +1,477 @@
+body{
+
+padding: 0;
+margin: 0;
+background-image: url(../images/blackground.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+
+}
+
+#menu{
+
+width: 100%;
+height: 100px;
+text-transform: uppercase;
+z-index: 10000;
+position: fixed;
+}
+
+/***************Barra de menú********************/
+
+.topbar {
+    background:  url(../images/lines.png);
+    position: fixed;
+    width: 100%;
+    height: 5px;
+    z-index: 10001;
+}
+
+.navbar-inverse {
+    background-color: #042E56;
+    border-color: #080808;
+    height: 60px;
+}
+
+.navbar-collapse ul{
+    margin: auto;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    transition: color 1s;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+    color: white;
+}
+
+/***************galleria********************/
+#home{
+    padding-top: 65px;
+}
+
+/**********************nosotros***********************/
+
+
+#nosotros{
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+#nosotros h2, h3, h4, p, b{
+    color:#e8be4c;
+}
+/**********************nosotros***********************/
+
+/**********************Terminales***********************/
+#terminales p{
+    text-transform: none;
+    color: white;
+}
+
+/**********************Terminales***********************/
+
+/**********************Noticias***********************/
+
+#noticias{
+    background: #4d4d4d; 
+    opacity: 0.9;
+    width: 100%;
+    height: 400px;
+}
+#noticias p, h2{
+     color:#e8be4c;
+}
+
+/**********************Noticias***********************/
+
+
+/**********************Noticias***********************/
+
+/**********************Spacer***********************/
+#separador{
+    background: url(../images/prueba1.jpg);
+    background-attachment: fixed;
+    height: 321px;
+}
+/**********************Spacer***********************/
+
+#principal-content{
+/*background-image: url(../img/bus.jpg);*/
+height: 800px;
+padding-top:200px;
+
+}
+
+footer {
+/*            background-color: #37475C;
+*/            width: 100%;
+            bottom: 0;
+            height: 270px;
+            position: relative;
+            height:230px;
+        }
+
+#divider{
+           background-color: #1F1D1D;
+           width: 100%;
+           height: 25px;
+
+        }
+.footer-content{
+
+          background-color: #312F2F;
+           width: 100%;
+           height: 200px;
+        }
+#section-1{
+   
+    margin-top: 17px;
+    margin-left: 36px;
+
+
+}
+#login{
+    
+    width: 400px;
+    height: 250px;
+    margin-left: 500px;
+    border-radius: 15px;
+    padding-top: 60px;
+    z-index: 800;
+    position: fixed;
+    
+}
+input::-webkit-input-placeholder {
+font-family: sans-serif;
+    font-size: 18px;
+  
+}
+#btn_login{
+       background-color: #F2521E;
+    font-family: serif;
+    font-size: 21px;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    margin-left: 120px;
+    margin-top: 40px;
+    
+}
+#btn_admin{
+       background-color: #F2521E;
+    font-family: serif;
+    font-size: 21px;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    margin-left: 160px;
+    margin-top: 40px;
+    
+}
+
+#btn_schedule{
+       background-color: #F2521E;
+    font-family: serif;
+    font-size: 21px;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    float: right;
+       margin-top: -71px;
+    margin-right: 741px;
+    
+}
+#schedule-content{
+
+height: 1000px;
+padding-top:70px;
+width: 100%;
+}
+
+
+.titulo-h2{
+    display: block;
+    color: gray;
+    background: #042E56;
+  padding: 10px 20px;
+  margin: 10px auto;
+    height: 35px;    
+}
+#textareaS {
+  display: block;
+  color: #042E56;
+  background: #ecf0f1;
+  border: 5px inset #042E56;
+padding: 10px 20px;
+  margin: 10px auto;
+  outline: 0;
+ width: 220px; height: 260px;
+    opacity: 0.95;
+    
+}
+#schedule{
+    margin: 20px 30px 0px 0px;
+    float: left;
+    padding-left: 120px;
+    
+}
+#rate {
+    float: left;
+    margin: 84px 26px 5px -1px;
+}
+
+#time{
+    margin: 20px 0px 0px 0px;
+    float: left;
+}
+
+#textareaD {
+  display: block;
+  color: #042E56;
+  background: #ecf0f1;
+  border: 5px inset #042E56;
+  padding: 10px 20px;
+  margin: 10px auto;
+  outline: 0;
+ width: 100px; height: 260px;
+    opacity: 0.95;
+}
+#textareaT {
+  display: block;
+  color: #042E56;
+  background: #ecf0f1;
+  border: 5px inset #042E56;
+  padding: 10px 20px;
+  margin: 10px auto;
+  outline: 0;
+  width: 80px; height: 260px;
+    opacity: 0.95;
+}
+#shade{
+    background: #4d4d4d;
+    opacity: 0.8;
+    padding-bottom: 18px;
+}
+
+/*Parte del mapa con rutas*/
+html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+  #map {          
+    float: left;
+    width: 600px;
+    height: 350px;  
+    display: block;
+    border: 5px inset #042E56;
+    text-shadow: 0 -1px 1px white;
+    padding: 10px 20px;
+    margin: 30px 0px 10px 55px;
+}
+#right-panel {
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+#right-panel select, #right-panel input {
+  font-size: 15px;
+}
+
+#right-panel select {
+  width: 100%;
+}
+
+#right-panel i {
+  font-size: 12px;
+}
+
+      #right-panel {
+        margin: 20px;
+        border-width: 2px;
+        width: 20%;
+        float: left;
+        text-align: left;
+        padding-top: 20px;
+      }
+      #directions-panel {
+        margin-top: 20px;
+        background-color:deepskyblue;
+        padding: 10px;
+      }
+
+
+    #routes-info{
+    height: 400px;
+    float: left;
+    width: 100%; 
+    margin: 10px auto 10px auto;
+    }
+
+#rutas {
+    display: block;
+    color: #e8be4c;
+    background: #042E56;
+    padding: 10px 20px;
+    outline: 0;
+    height: 50px;
+    width: 700px;
+    
+}
+
+#rutas b{
+    color: #e8be4c;
+    font-size: 17px;
+    margin: 5px;
+}
+
+
+#rutas select{
+   width: 240px;
+   height: 34px;
+    color: black;
+    background: #ecf0f1;
+    padding: 2px;
+}
+#horarios {
+    background: #4d4d4d;
+    height: 830px;
+    width: 735px;
+    opacity: 0.9;
+    padding: 15px;
+    margin: 60px auto 0px auto;
+    align-items: center;
+}
+
+
+/*
+Codigo de joseph //////////////////////////////////////////////////////////////////////////////
+*****************************************************************************
+*****************************************************************************
+//////////////////****************************************************
+*/
+
+
+
+#admin-content{
+    
+    
+height: 800px;
+    padding-top:200px;
+    
+}
+
+#login-content{
+margin-top: 10%;    
+}
+
+
+table {    
+    
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;   
+    margin: 45px;     
+    width: 480px; 
+    text-align: left; 
+    border-collapse: collapse; 
+    margin-left: 20%;
+}
+
+th {
+    font-size: 35px;
+    font-weight: normal;
+    padding: 15px;
+    background: #042E56;
+    border-top: 4px solid #042E56;
+    color: #E89F10;
+}
+
+td {
+    padding: 14px;
+    background: rgba(8, 8, 8, 0.72);
+    border-bottom: 0px solid #fff;
+    color: #E89F10;
+    border-top: 1px solid transparent;
+    font-size: 16px;
+}
+tr:hover td { background: #d0dafd; color: #339; }
+
+@media (max-width: 1160px) {
+  
+    table{
+        
+        margin-left: 15%;
+    }
+    th {
+    font-size: 20px;
+    padding: 11px;
+    text-align: left;
+    padding: 8px 10px 10px 1px;
+}
+    
+    td {
+    padding: 14px;
+    font-size: 14px;
+}
+    
+}
+
+@media screen and (max-width:651px){
+	table, thead, tr, th, tbody, td{
+		display:block;
+	}
+    table{
+        
+        margin 0px;
+        margin-left: 0px;
+    }
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+    th{
+        
+        display: none;
+    }
+	td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	td:before { 
+		position: absolute;
+	
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	td:nth-of-type(1):before { content: "Ruta"; }
+	td:nth-of-type(2):before { content: "Precio"; }
+	td:nth-of-type(3):before { content: "Tiempo"; }
+	td:nth-of-type(4):before { content: "Horario"; }
+	td:nth-of-type(5):before { content: "Servicio"; }
+	td:nth-of-type(6):before { content: "Opciones"; }
+	}
+
+#insert-content{
+margin-top: 100px;    
+     
+}
+
+#select {
+    border: solid 7px #E89F10;
+    width: 250px;
+    font-size: 20px;
+    margin-left: 144px;
+    margin-bottom: 15px;
+}
+#a-img-edit{
+   
+width: 43px;
+}
