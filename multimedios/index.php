@@ -25,7 +25,7 @@ $pages = 'index';
 
 <!-- favicon -->
 <link rel="shortcut icon" href="./images/logo-icono.png" type="image/x-icon">
-<link rel="icon" href="./images/logo-icono.png" type="image/x-icon">
+<link rel="icon" href="./images/favicon.ico" type="image/x-icon">
 
 
 <link rel="stylesheet" href="./assets/style.css">
@@ -46,22 +46,20 @@ $pages = 'index';
                 </div>
         <!-- #Item 1 -->
 
-        <!-- Item 1 -->
+        <!-- Item 2 -->
                 <div class="item">
                     <img src="./images/gallery2.jpg" alt="banner">
                 </div>
-        <!-- #Item 1 -->
+        <!-- #Item 2 -->
 
-
-        <!-- Item 1 -->
+        <!-- Item 3 -->
                 <div class="item">
                     <img src="./images/gallery4.jpg" alt="banner">
                 </div>
-        <!-- #Item 1 -->
-           
+        <!-- #Item 3 -->
             </div>
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon-chevron-left"><i class="fa fa-angle-left"></i></span></a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon-chevron-right"><i class="fa fa-angle-right"></i></span></a>
+            <a class="left carousel-control" href="#myCarousel" onclick="ga('send', 'event', 'Index', 'click','btnSliderLeft')" data-slide="prev"><span class="glyphicon-chevron-left"><i class="fa fa-angle-left"></i></span></a>
+            <a class="right carousel-control" href="#myCarousel" onclick="ga('send', 'event', 'Index', 'click','btnSliderRigth')"  data-slide="next"><span class="glyphicon-chevron-right"><i class="fa fa-angle-right"></i></span></a>
         </div>
 <!-- #Slider Ends -->
 </div>
@@ -97,7 +95,7 @@ $pages = 'index';
         <figcaption>
             <h2>Puntarenas</h2><br>
             <p>Del muelle, 125 metros este.<br>Horario de oficina: 7:00 am a 6:00 pm<br><br>
-            <a href="images/portfolio/puntarenas.jpg" title="1" data-gallery>Ver más</a></p>            
+            <a href="images/portfolio/puntarenas.jpg" onclick="ga('send', 'event', 'Index', 'click','btnPuntarenas')" title="1" data-gallery>Ver más</a></p>            
         </figcaption>
     </figure>
      <figure class="effect-oscar  wowload fadeInUp">
@@ -105,7 +103,7 @@ $pages = 'index';
         <figcaption>
             <h2>El Roble</h2><br>
             <p>Frente al Polideportivo de El Roble.<br>Horario de Oficina: 7:00 am a 6:00 pm<br><br>
-            <a href="images/portfolio/roble.jpg" title="1" data-gallery>Ver más</a></p>            
+            <a href="images/portfolio/roble.jpg" onclick="ga('send', 'event', 'Index', 'click','btnRoble')" title="1" data-gallery>Ver más</a></p>            
         </figcaption>
     </figure>
          <figure class="effect-oscar  wowload fadeInUp">
@@ -113,7 +111,7 @@ $pages = 'index';
         <figcaption>
             <h2>Esparza</h2><br>
             <p>De la entrada principal de Esparza o del Restaurante tabaris, 50 mts este.<br>Horario de Oficina: 6:00 am a 6:00 pm<br><br>
-            <a href="images/portfolio/esparza.jpg" title="1" data-gallery>Ver más</a></p>            
+            <a href="images/portfolio/esparza.jpg" onclick="ga('send', 'event', 'Index', 'click','btnEsparza')" title="1" data-gallery>Ver más</a></p>            
         </figcaption>
     </figure>
      <figure class="effect-oscar  wowload fadeInUp">
@@ -121,23 +119,23 @@ $pages = 'index';
         <figcaption>
             <h2>San Ramón</h2><br>
             <p>Del Mercado Municpal de San Ramón, 175 mts, oeste.<br>Horario de Oficina: 5:00 am a 5:00 pm<br><br>
-            <a href="images/portfolio/sanramon.jpg" title="1" data-gallery>Ver más</a></p>            
+            <a href="images/portfolio/sanramon.jpg" onclick="ga('send', 'event', 'Index', 'click','btnSanRamon')" title="1" data-gallery>Ver más</a></p>            
         </figcaption>
     </figure>
      <figure class="effect-oscar  wowload fadeInUp">
         <img src="images/portfolio/alajuela.jpg" alt="img01"/>
         <figcaption>
             <h2>Alajuela</h2><br>
-            <p>Avenida 10 y 12 calle 16, Barrio Los Ángeles.<br>Horario de Oficina: 7:00 am a 5:00 pm<br><br>
-            <a href="images/portfolio/alajuela.jpg" title="1" data-gallery>Ver más</a></p>            
+            <p>200 metros al norte de la entrada principal del City Mall<br>Horario de Oficina: 7:00 am a 5:00 pm<br><br>
+            <a href="images/portfolio/alajuela.jpg" onclick="ga('send', 'event', 'Index', 'click','btnAlajuela')" title="1" data-gallery>Ver más</a></p>            
         </figcaption>
     </figure>   
      <figure class="effect-oscar  wowload fadeInUp">
-        <img src="images/portfolio/sanjose.JPG" alt="img01"/>
+        <img src="images/portfolio/sanjose.jpg" alt="img01"/>
         <figcaption>
             <h2>San José</h2><br>
             <p>Avenida 10 y 12 calle 16, Barrio Los Ángeles.<br>Horario de Oficina: 7:00 am a 5:00 pm<br><br>
-            <a href="images/portfolio/sanjose.JPG" title="1" data-gallery>Ver más</a></p>            
+            <a href="images/portfolio/sanjose.jpg" onclick="ga('send', 'event', 'Index', 'click','btnSanJose')" title="1" data-gallery>Ver más</a></p>            
         </figcaption>
     </figure>      
         <!-- terminales Ends -->
@@ -150,7 +148,9 @@ $pages = 'index';
     <div id="noticias" class="container spacer ">
 	<h2 class="text-center  wowload fadeInUp">Últimos acontecimientos</h2>
   <div class="clearfix">
+    <div id="col-left" class="col-sm-6 partners  wowload fadeInLeft">
    
+   </div>
     <div  id="col-right" class="col-sm-6">
 
 
@@ -178,9 +178,9 @@ $pages = 'index';
 
    <!-- Indicators -->
    	<ol class="carousel-indicators">
-    <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-testimonials" data-slide-to="1"></li>
-    <li data-target="#carousel-testimonials" data-slide-to="2"></li>
+    <li data-target="#carousel-testimonials" data-slide-to="0" class="active"  onclick="ga('send', 'event', 'Index', 'click','circleLeft')"></li>
+    <li data-target="#carousel-testimonials" data-slide-to="1"  onclick="ga('send', 'event', 'Index', 'click','circleMedium')"></li>
+    <li data-target="#carousel-testimonials" data-slide-to="2"  onclick="ga('send', 'event', 'Index', 'click','circleRigth')"></li>
   	</ol>
   	<!-- Indicators -->
   </div>
@@ -223,20 +223,46 @@ $pages = 'index';
 <div id="contact" class="spacer">
 <!--Contact Starts-->
 <div id="shade" class="container contactform center">
+
+
 <h2 class="text-center  wowload fadeInUp">¡Ponte en contacto con nosotros!</h2>
   <div class="row wowload fadeInLeftBig">      
       <div class="col-sm-6 col-sm-offset-3 col-xs-12">      
-        <input type="text" placeholder="Nombre">
-        <input type="text" placeholder="Motivo">
-        <textarea rows="5" placeholder="Mensaje"></textarea>
-        <button class="btn btn-primary"><i class="fa fa-paper-plane"></i> Enviar</button>
-      </div>
+              <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <input type="text" placeholder="Nombre" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <input type="tel" placeholder="Telefono" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <input type="email" placeholder="Correo" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <textarea rows="10" cols="100" placeholder="Mensaje" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                        </div>
+                    </div>
+                    <div id="success"></div>
+                    <!-- For success/fail messages -->
+                    <button type="submit" class="btn btn-primary" class="fa fa-paper-plane" onclick="ga('send','event','Index','click','btnEnviarContactenos')" >Enviar</button>
+                </form>
   </div>
 
 
 
 </div>
 </div>
+
+
+
 <!--Contact Ends-->
     
     
@@ -276,6 +302,8 @@ $pages = 'index';
 <script src="assets/gallery/jquery.blueimp-gallery.min.js"></script>
 
 <!-- custom script -->
+ <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 <script src="assets/script.js"></script>
 </body>
-</html>
+</html>		
