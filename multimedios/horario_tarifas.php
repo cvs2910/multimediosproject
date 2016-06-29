@@ -104,7 +104,7 @@ $queryService = mysql_query("SELECT idService,service from tbservices", $db->get
         <p id="alerta">* Seleccione un servicio para habilitar las rutas.</p>	
         </div>
 
-         <button class="btn btn-primary"><i class="fa fa-paper-plane"></i> Consultar</button>
+         <button id="btn_consulta" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Consultar</button>
     
     </form>
 
