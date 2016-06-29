@@ -32,7 +32,7 @@
               <ul class="nav navbar-nav navbar-right scroll">
                   
                   <li class="active"><a href="index.php">Inicio</a></li>
-                 <li ><a href="insert.php">Agregar Ruta</a></li>
+                  <li class="active"><a href="insert.php">Agregar Ruta</a></li>
                  <li ><a href="horario_tarifas.php">Horarios y Rutas</a></li>
                  <li ><a href="closesession.php">Cerrar sesion</a></li>
              
@@ -48,23 +48,23 @@
             <div class="navbar-collapse  collapse">
               <ul class="nav navbar-nav navbar-right scroll">
                   
-                  <li class="active"><a href="index.php">Inicio</a></li>
-                 <li ><a href="index.php#nosotros">Nosotros</a></li>
-                 <li ><a href="index.php#terminales">Terminales</a></li>
-                 <li ><a href="index.php#noticias">Noticias</a></li>
-                 <li ><a href="#schedule-content">Horarios y Rutas</a></li>
-                 <li ><a href="index.php#contact">Contacto</a></li>
+                  <li class="active"><a href="index.php" onclick="ga('send', 'event', 'Home', 'click','btnStart2')">Inicio</a></li>
+                 <li ><a href="index.php#nosotros" onclick="ga('send', 'event', 'Home', 'click','btnUs2')">Nosotros</a></li>
+                 <li ><a href="index.php#terminales" onclick="ga('send', 'event', 'Home', 'click','btnTerminals2')">Terminales</a></li>
+                 <li ><a href="index.php#noticias" onclick="ga('send', 'event', 'Home', 'click','btnNews2')">Noticias</a></li>
+                 <li ><a href="#schedule-content" onclick="ga('send', 'event', 'Home', 'click','btnSchedule2')">Horarios y Rutas</a></li>
+                 <li ><a href="index.php#contact" onclick="ga('send', 'event', 'Home', 'click','btnContact2')">Contacto</a></li>
                   </ul>
             </div>
                 <?php } else { ?>
               <div class="navbar-collapse  collapse">
               <ul class="nav navbar-nav navbar-right scroll">
-                  <li class="active"><a href="#home">Inicio</a></li>
-                 <li ><a href="#nosotros">Nosotros</a></li>
-                 <li ><a href="#terminales">Terminales</a></li>
-                 <li ><a href="#noticias">Noticias</a></li>
-                 <li ><a href="horario_tarifas.php">Horarios y Rutas</a></li>
-                 <li ><a href="#contact">Contacto</a></li>
+                  <li class="active"><a href="#home" onclick="ga('send', 'event', 'Home', 'click','btnStart')">Inicio</a></li>
+                 <li ><a href="#nosotros" onclick="ga('send', 'event', 'Home', 'click','btnUs')">Nosotros</a></li>
+                 <li ><a href="#terminales" onclick="ga('send', 'event', 'Home', 'click','btnTerminals')">Terminales</a></li>
+                 <li ><a href="#noticias" onclick="ga('send', 'event', 'Home', 'click','btnNews')">Noticias</a></li>
+                 <li ><a href="horario_tarifas.php" onclick="ga('send', 'event', 'Home', 'click','btnSchedule')">Horarios y Rutas</a></li>
+                 <li ><a href="#contact" onclick="ga('send', 'event', 'Home', 'click','btnContact')">Contacto</a></li>
                   </ul>
             </div>
                 <?php } ?>
